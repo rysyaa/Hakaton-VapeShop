@@ -1,5 +1,41 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Стили для хедера */
+.header {
+  background-color: #3a3a3a;
+  color: #fff;
+  padding: 20px;
+}
+
+.header__title {
+  font-size: 36px;
+  margin: 0;
+}
+
+.header__nav {
+  margin-top: 10px;
+}
+
+.header__nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__nav-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header__nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header__nav-link:hover {
+  text-decoration: underline;
 }
