@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 body {
@@ -9,6 +12,48 @@ body {
   background-size: cover;
   position: relative;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ! start header */
+header {
+  background-color: #00000066;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__NameShop {
+  display: flex;
+  align-items: center;
+}
+.header__nameShop {
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 46px;
+}
+header img {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+}
+.header__contact {
+  width: 34px;
+  height: 34px;
+  transition: 0.2s;
+}
+.header__contact:hover {
+  transform: scale(1.1);
+}
+/* ! finifsh header */
 
 .product-card-h3 {
   color: white;
@@ -16,6 +61,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  margin-top: 10px;
 }
 
 .product-card-container {
@@ -28,6 +74,8 @@ body {
   justify-content: center;
   width: 1200px; /* Максимальная ширина контейнера, чтобы карточки не разъезжались на широких экранах */
   margin: 0 auto; /* Центрирование контейнера на странице */
+  margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 .product-card {
@@ -187,4 +235,59 @@ body {
 
 .image-container:hover .overlay {
   opacity: 1; /* При наведении на картинку делаем overlay полностью прозрачным (видимым) */
+}
+/*!  */
+
+footer {
+  height: 34vh;
+  background-color: rgba(0, 0, 0, 0.758);
+  /* background-image: url(../images/bg-footer.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer__container {
+  margin: 0 auto;
+  height: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__icon {
+  margin-right: 18%;
+  text-align: center;
+}
+.footer__icon img {
+  width: 180px;
+}
+.footer__icon h3 {
+  color: rgb(143, 0, 0);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4em;
+}
+.footer__container p {
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+.footer__contact {
+  padding: 6px 0;
+}
+.footer__contact img {
+  height: 1rem;
+  width: 1rem;
+}
+.footer__contact a {
+  font-family: "Roboto", sans-serif;
+}
+
+#header-btn-back img {
+  cursor: pointer; /* Изменение курсора при наведении на кнопку */
+  width: 2em;
+  height: 2em;
+  transition: 0.2s;
+}
+
+#header-btn-back img:hover {
+  transform: scale(1.1);
 }
