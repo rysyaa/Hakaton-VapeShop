@@ -12,7 +12,7 @@ body {
   background-size: cover;
   position: relative;
 }
-button{
+button {
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   transition: 0.4s;
@@ -159,12 +159,12 @@ header img {
 
 /*!  */
 .gradient-border {
-  border: 5px solid transparent; 
-  border-image: linear-gradient(to left, #000000, #290031); 
-  border-image-slice: 1; 
+  border: 5px solid transparent;
+  border-image: linear-gradient(to left, #000000, #290031);
+  border-image-slice: 1;
   background-color: #29003530;
 }
-#modal {
+#modal2 {
   display: none;
   width: 900px;
   height: 400px;
@@ -316,17 +316,16 @@ footer {
 #header-btn-back img:hover {
   transform: scale(1.1);
 }
-.pagination__btns{
+.pagination__btns {
   text-align: center;
 }
-.btn{
+.btn {
   padding: 0.05em 0.4em;
   font-size: 2em;
-  background-color: #998e7800;
   color: white;
-  border: 3px solid transparent; 
-  border-image: linear-gradient(to bottom, #000000, #290031); 
-  border-image-slice: 1; 
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom, #000000, #290031);
+  border-image-slice: 1;
   background-color: #29003530;
 }
 form {
@@ -351,9 +350,9 @@ form {
   transition: 0.3s;
   text-align: center;
   border-radius: 5px;
-  border: 3px solid transparent; 
-  border-image: linear-gradient(to bottom, #000000, #290031); 
-  border-image-slice: 1; 
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom, #000000, #290031);
+  border-image-slice: 1;
   background-color: #29003530;
 }
 
@@ -362,14 +361,14 @@ form {
   border-radius: 5px;
   font-size: 1em;
 }
-#btnCreate{
+#btnCreate {
   width: 3%;
   height: 3em;
   background-color: #998e7800;
   color: white;
-  border: 3px solid transparent; 
-  border-image: linear-gradient(to bottom, #000000, #290031); 
-  border-image-slice: 1; 
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom, #000000, #290031);
+  border-image-slice: 1;
   background-color: #29003530;
 }
 
@@ -386,6 +385,12 @@ form {
   align-content: center;
   justify-content: center;
 }
+
+.editH2 {
+  color: white;
+  text-align: center;
+}
+
 #closeEditModal {
   height: 5%;
   width: 5%;
@@ -395,9 +400,37 @@ form {
   flex-direction: column;
   width: 30%;
   height: 40%;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom, #000000, #290031);
+  border-image-slice: 1;
 }
+
 .editInps {
   width: 300px;
   margin-top: 5%;
   margin-bottom: 5%;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom, #000000, #290031);
+  border-image-slice: 1;
+  background-color: #d75bef;
+}
+
+#modal {
+  display: none;
+  width: 400px;
+  height: 400px;
+  max-width: 70%;
+  margin: 25px auto;
+  position: fixed;
+  top: 15%;
+  left: 35%;
+  background-color: #290035f7;
+}
+
+#editForm button {
+  color: white;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom, #000000, #290031);
+  border-image-slice: 1;
+  background-color: #29003530;
 }

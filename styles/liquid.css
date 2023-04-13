@@ -12,7 +12,7 @@ body {
   background-size: cover;
   position: relative;
 }
-button{
+button {
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   transition: 0.4s;
@@ -299,16 +299,16 @@ footer {
 #header-btn-back img:hover {
   transform: scale(1.1);
 }
-.pagination__btns{
+.pagination__btns {
   text-align: center;
 }
-.btn{
+.btn {
   padding: 0.05em 0.4em;
   font-size: 2em;
   background-color: #998e7800;
   color: white;
-  border: 5px solid transparent; 
-  border-image: linear-gradient(to right, #002e0b, #650000); 
-  border-image-slice: 1; 
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, #002e0b, #650000);
+  border-image-slice: 1;
   background-color: #71000030;
 }
