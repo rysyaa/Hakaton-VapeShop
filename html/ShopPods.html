@@ -19,16 +19,18 @@
         </div>
         <div class="header__icons">
           <img
-            class="header__contact"
+            class="header__contact admin"
             src="../images/contact-header.png"
             alt=""
           />
           <img class="header__contact" src="../images/fav-header.png" alt="" />
           <img class="header__contact" src="../images/card-header.png" alt="" />
+          <span id="adminExit">Выйти из Админа</span>
         </div>
       </div>
     </header>
     <h3 class="product-card-h3">POD-СИСТЕМЫ</h3>
+    <!-- ! START CREATE CARD -->
     <section class="container add-block">
       <form>
         <div class="allInputs">
@@ -55,6 +57,20 @@
         </div>
       </form>
     </section>
+    <!-- ! FINISH CREATE CARD -->
+    <!-- ! START SEARCH AND FILTER -->
+    <section class="container searchInput">
+      <input id="inpSearch" type="text" placeholder="Поиск" />
+      <button>search</button>
+    </section>
+    <div class="filter_btns container">
+      <button class="filter_btn" id="btn1">Voopoo</button>
+      <button class="filter_btn" id="btn2">Smoant</button>
+      <button class="filter_btn" id="btn3">Rincoe</button>
+      <button class="filter_btn" id="btn4">Vaporesso </button>
+      <button class="filter_btn" id="btn5">Все</button>
+    </div>
+    <!-- ! FINISH SEARCH AND FILTER -->
     <br />
     <div id="product-card-container" class="product-card-container">
       <!-- <div class="product-card">

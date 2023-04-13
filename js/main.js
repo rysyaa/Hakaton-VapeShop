@@ -17,7 +17,10 @@ let inpImg = document.getElementById("inpImg");
 let inpSkills = document.getElementById("inpDesc");
 let inpPrice = document.getElementById("inpPrice");
 let btnCreate = document.getElementById("btnCreate");
-let btnDelete = document.querySelector(".product-card__button2")
+let btnDelete = document.querySelector(".product-card__button2");
+let inpSearch = document.querySelector("#inpSearch");
+let categoryBtns = document.querySelectorAll(".filter_btns button");
+let filterValue = "Все";
 
 
 
@@ -65,8 +68,12 @@ async function createObj(objProf) {
 }
 // ! read
 
-async function vapeCatalog (){
-  let res = await fetch(`${API}?_page=${currentPage}&_limit=6`);
+async function vapeCatalog (search = ""){
+  let res = filterValue !== "Все"
+  ? await fetch(
+      `${API}?q=${search}&_page=${currentPage}&_limit=6&category=${filterValue}`
+    )
+  : await fetch(`${API}?q=${search}&_page=${currentPage}&_limit=6`);
   let data = await res.json()
   prodictCardContainer.innerHTML = "";
   data.forEach((elem) => {
@@ -154,11 +161,21 @@ closeBtn.addEventListener("click", () => {
   editmodal.style.display = "none";
 });
 
+// ! ============== Seacrh =============
+inpSearch.addEventListener("input", (e) => {
+  vapeCatalog(e.target.value);
+});
 
-
-
-
-
+// ! ============== START FILTER ===============
+categoryBtns.forEach((elem) => {
+  console.log(elem.innerText);
+  elem.addEventListener("click", () => {
+    filterValue = elem.innerText;
+    vapeCatalog(); 
+  });
+});
+// ! =============== FINISH FILTER============
+// ! ======================== START PAGINATION ===========================
 async function countPages() {
     let res = await fetch(API);
     let data = await res.json();
@@ -166,7 +183,7 @@ async function countPages() {
   }
 
   nextBtn.addEventListener("click", () => {
-    if (currentPage >= pageLength || currentPage >= 3) return;
+    if (currentPage >= 3) return;
     currentPage++;
     vapeCatalog();
   });
@@ -175,6 +192,8 @@ async function countPages() {
     currentPage--;
     vapeCatalog();
   });
+  // ! ===================== FINISH PAGINATION =====================
+  // !================== START MODAL ======================
 
   async function showDetailsModal(id) {
     modal.style.display = "flex";
@@ -188,6 +207,32 @@ async function countPages() {
   closeBtnDetailsModal.addEventListener("click", () => {
     modal.style.display = "none"
   })
+
+  // ! ==================== FINISH MODAL ================== 
+// ! =============== START ADMIN ==================
+let admin = document.querySelector(".admin");
+let exitAdmin = document.querySelector("#adminExit");
+admin.addEventListener("click", () => {
+  let adminPass = prompt("Вводите пороль");
+  if(adminPass == 123123){
+    admin.style.background = "red";
+    admin.style.borderRadius = 40 + "%"
+    exitAdmin.style.display = "block"
+    alert("Вы вошли в админку)")
+  } else {
+    alert("Пороль не верный (")
+  }
+})
+exitAdmin.addEventListener("click", () => {
+  alert("Вы вышли с Админа")
+  exitAdmin.style.display = "none";
+  admin.style.background = "none";
+  admin.style.borderRadius = 0
+})
+// ! ==================== FINISH ADMIN ====================
+
+
+
 
 
   

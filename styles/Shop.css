@@ -1,4 +1,5 @@
 /* Стили для карточки товара */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 * {
@@ -11,6 +12,7 @@ body {
   background-image: url(https://phonoteka.org/uploads/posts/2022-01/1643600072_1-phonoteka-org-p-temnii-fon-s-dimom-1.png);
   background-size: cover;
   position: relative;
+  z-index: 9999;
 }
 button {
   cursor: pointer;
@@ -52,6 +54,22 @@ header img {
   width: 120px;
   height: 120px;
   cursor: pointer;
+  
+}
+.header__icons{
+  display: flex;
+  align-items: center;
+}
+.header__icons span{
+  display: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.header__icons span:hover{
+  transform: scale(1.02);
+  color: red;
 }
 .header__contact {
   width: 34px;
@@ -283,7 +301,7 @@ footer {
   text-align: center;
 }
 .footer__icon img {
-  width: 180px;
+  width: 27%;
 }
 .footer__icon h3 {
   color: rgb(143, 0, 0);
@@ -434,3 +452,40 @@ form {
   border-image-slice: 1;
   background-color: #29003530;
 }
+.filter_btns {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin: 1em auto;
+  max-width: 70%;
+}
+.searchInput{
+  max-width: 70%;
+  margin: 0 auto;
+}
+.searchInput input{
+  border: none;
+  width: 20%;
+  height: 2.6em;
+  border-radius: 0.2em;
+  padding-left: 1em;
+}
+.searchInput button{
+  width: 6%;
+  height: 2.6em;
+  border-radius: 0.2em;
+  border: none;
+}
+.filter_btn {
+  width: 180px;
+  height: 50px;
+  background-color: white;
+  border: 2px solid;
+  transition: 0.3s;
+  border-radius: 1em;
+}
+.filter_btn:hover {
+  background-color: black;
+  color: white;
+}
+

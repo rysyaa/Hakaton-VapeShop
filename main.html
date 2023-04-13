@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/mediaMain.css">
     <title>Smokeless Society</title>
 </head>
 <body>
@@ -33,7 +35,7 @@
     </header>
     <!-- ? FINISH HEADER -->
     <!-- ! START SECTION VAPE -->
-    <section class="section1">
+    <section data-aos="fade-up" class="section1">
         <div id="section1Cont" class="section1__container">
             <h1>Добро пожаловать в <br> Smokeless Society!</h1>
             <h3>Место, где стиль и технологии встречаются, <br> чтобы предложить вам самое лучшее в мире вейпинга!</h3>
@@ -42,7 +44,7 @@
     </section>
     <!-- ? FINISH SECTION VAPE -->
     <!-- ! START SECTION DISPOSABLE -->
-    <section id="section2Cont" class="section2">
+    <section data-aos="fade-up" id="section2Cont" class="section2">
         <div class="section1__container section2__container">
             <h3>Одноразовые электронные сигареты!</h3>
             <h4>Это компактные электронные устройства, предназначенные для курения без сжигания табака. Они обычно состоят из двух основных компонентов: батарейного блока и картриджа с жидкостью для парения!</h4>
@@ -51,7 +53,7 @@
     </section>
     <!-- ? FINISH SECTION DISPOSABLE -->
     <!-- ! START SECTION LIQUIDE -->
-    <section id="section3Cont" class="section3">
+    <section data-aos="fade-up" id="section3Cont" class="section3">
         <div class="section1__container section3__container">
             <h3>Жидкость для электронной сигареты, также называемая "электронная жидкость" или "жидкость", является основным элементом, используемым в электронных сигаретах для создания пара, который пользователь вдыхает</h3>
             <a href="./html/ShopLiquid.html"><button class="section1__btnVape">Смотреть все жидкости</button></a>
@@ -59,7 +61,7 @@
     </section>
     <!-- ? FINISH SECTION LIQUIDE -->
     <!-- ! START SECTION FUN -->
-    <section id="section4Cont" class="section4">
+    <section data-aos="fade-up" id="section4Cont" class="section4"> data-aos="fade-up"
         <div class="section1__container section4__container">
             <h3>Веселящие товары</h3>
             <h4>Веселые товары, которые помогут создать позитивное настроение и добавят радости в вашу жизнь!</h4>
@@ -68,7 +70,7 @@
     </section>
     <!-- ? FINISH SECTION FUN -->
     <!-- ! START FOOTER -->
-    <footer>
+    <footer data-aos="fade-up">
         <div id="footerCont" class="footer__container">
             <p>Кыргызстан, г. Бишкек, Табышалиева 29 <br> (рядом с Фрунзе)Кыргызстан, г. Бишкек, <br> Табышалиева 29 (пр. Манаса пресекает, <br> Токтогуда напротив кофейни "Комьюнити")</p>
             <div class="footer__icon">
@@ -95,5 +97,11 @@
 
 
     <script src="./js/main.js"></script>
+    <!-- ! START AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <!-- ? FINISH AOS -->
   </body>
 </html>
