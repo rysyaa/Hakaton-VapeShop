@@ -16,7 +16,14 @@ a {
   text-decoration: none;
   color: white;
 }
-
+button{
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  transition: 0.4s;
+}
+button:hover {
+  transform: scale(1.1);
+}
 /* ! start header */
 header {
   background-color: #000000d7;
@@ -290,4 +297,17 @@ footer {
 
 #header-btn-back img:hover {
   transform: scale(1.1);
+}
+.pagination__btns{
+  text-align: center;
+}
+.btn{
+  padding: 0.05em 0.4em;
+  font-size: 2em;
+  background-color: #998e7800;
+  color: white;
+  border: 5px solid transparent; 
+  border-image: linear-gradient(to right, #002e0b, #650000); 
+  border-image-slice: 1; 
+  background-color: #71000030;
 }

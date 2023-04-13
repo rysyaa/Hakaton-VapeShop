@@ -1,4 +1,4 @@
-let API = "http://localhost:8000/VapeLiquid";
+let API = "http://localhost:8000/DisposableVape";
 let prodictCardContainer = document.querySelector(".product-card-container")
 let nextBtn = document.querySelector("#nextBtn");
 let prevBtn = document.querySelector("#prevBtn");
@@ -31,24 +31,7 @@ async function vapeCatalog (){
       </div>
     `
     });
-    countPages();
 }
 vapeCatalog()
-async function countPages() {
-    let res = await fetch(API);
-    let data = await res.json();
-    pageLength = Math.ceil(data.length / 3);
-  }
-
-  nextBtn.addEventListener("click", () => {
-    if (currentPage >= pageLength || currentPage >= 2) return;
-    currentPage++;
-    vapeCatalog();
-  });
-  prevBtn.addEventListener("click", () => {
-    if (currentPage <= 1) return;
-    currentPage--;
-    vapeCatalog();
-  });
 
 
