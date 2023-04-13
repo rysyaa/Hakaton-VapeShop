@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/Shop.css" />
+    <title>VapeShop</title>
+  </head>
+  <body>
+    <h3 class="product-card-h3">POD-СИСТЕМЫ</h3>
+    <br />
+    <div class="product-card-container">
+      <div class="product-card">
+        <img
+          class="product-card__image"
+          src="https://babylonvape.ru/upload/resize_cache/iblock/ea7/400_400_140cd750bba9870f18aada2478b24840a/k48r52lj99w8m0ra18a8b0y7el7j7mi3.jpg"
+          alt="Image 1"
+        />
+        <h3 class="product-card__title">Charon Baby Plus</h3>
+        <p class="product-card__description">
+          <strong>Комплектация:</strong><br />
+          Smoant Charon Baby Plus-1 шт; <br />
+          Картридж Charon Baby Plus-1 шт;<br />
+          Испаритель Smoant Santi S-2 Mesh RDL 0.6 Ом-1 шт; <br />
+          Кабель Type-C USB-1 шт; <br />
+          Руководство пользователя-1 шт;
+        </p>
+        <span class="product-card__price">1450 руб</span> <br />
+        <button class="product-card__button">Подробнее...</button>
+      </div>
+    </div>
+    <!--! Start modal -->
+    <div class="gradient-border" id="modal">
+      <div class="image-container">
+        <img
+          max-width="500px"
+          min-width="500px"
+          id="modalLeft"
+          src="https://babylonvape.ru/upload/resize_cache/iblock/ea7/400_400_140cd750bba9870f18aada2478b24840a/k48r52lj99w8m0ra18a8b0y7el7j7mi3.jpg"
+          alt="profPic"
+        />
+        <div class="overlay"></div>
+      </div>
+      <div id="modal-r">
+        <button id="closeBtn">X</button>
+        <div id="modalRight">
+          <h2>Name</h2>
+          <h3>Price</h3>
+          <p>
+            Характеристики: Емкость аккумулятора: 1000 <br />
+            Аккумулятор: Встроенный <br />
+            Производитель: Smoant <br />
+            Тип испарителя: Smoant Santi S Coils (S1 DL 0.4 Ом / S2 RDL 0.6 Ом /
+            S3 MTL 1.2 Ом) <br />
+            Тип затяжки: Смешанная
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- ? Finish modal -->
+    <script src="../js/shop.js"></script>
+  </body>
+</html>
