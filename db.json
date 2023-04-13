@@ -95,6 +95,13 @@
       "price": "1 295 руб",
       "category": "vape",
       "id": 12
+    },
+    {
+      "name": "dastan",
+      "image": "https://staticg.sportskeeda.com/editor/2022/07/459ce-16577995053806-1920.jpg",
+      "description": "dasdasdas",
+      "price": "12",
+      "id": 13
     }
   ],
   "VapeLiquid": [
