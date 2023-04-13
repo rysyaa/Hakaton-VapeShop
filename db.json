@@ -12,7 +12,7 @@
       "image": "https://babylonvape.ru/upload/resize_cache/iblock/1a7/400_400_140cd750bba9870f18aada2478b24840a/b9sr1f15i65deaufhage7tre60p08y17.jpg",
       "name": "Rincoe Jellybox Nano 2",
       "description": "Комплектация: Батарейный блок - 1 шт;Картридж - 1 шт;Испаритель 0.6 Ом (предустановлен) - 1 шт;Запасной испаритель 1.2 Ом - 1 шт;USB Type-C кабель - 1 шт;Руководство пользователя - 1 шт;",
-      "price": "1 990 руб",
+      "price": "",
       "category": "vape",
       "id": 3
     },
@@ -87,13 +87,6 @@
       "price": "1 295 руб",
       "category": "vape",
       "id": 12
-    },
-    {
-      "name": "dastan",
-      "image": "https://staticg.sportskeeda.com/editor/2022/07/459ce-16577995053806-1920.jpg",
-      "description": "dasdasdas",
-      "price": "12",
-      "id": 13
     }
   ],
   "VapeLiquid": [
