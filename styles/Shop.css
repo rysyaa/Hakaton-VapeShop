@@ -1,0 +1,190 @@
+/* Стили для карточки товара */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-image: url(https://phonoteka.org/uploads/posts/2022-01/1643600072_1-phonoteka-org-p-temnii-fon-s-dimom-1.png);
+  background-size: cover;
+  position: relative;
+}
+
+.product-card-h3 {
+  color: white;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.product-card-container {
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, #000000, #290031);
+  border-image-slice: 1;
+  background-color: #29003530;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  width: 1200px; /* Максимальная ширина контейнера, чтобы карточки не разъезжались на широких экранах */
+  margin: 0 auto; /* Центрирование контейнера на странице */
+}
+
+.product-card {
+  max-width: 26%;
+  flex-basis: calc(33.33% - 20px);
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card__image {
+  width: 70%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-card__title {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.product-card__description {
+  font-size: 14px;
+  color: #000000a4;
+  margin-top: 5px;
+}
+
+.product-card__price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #000000;
+}
+
+.product-card__button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card__button:hover {
+  background-color: #3d3d3d;
+}
+
+/*!  */
+.gradient-border {
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, #000000, #818181);
+  border-image-slice: 1;
+}
+#modal {
+  display: none;
+  width: 900px;
+  height: 400px;
+  max-width: 70%;
+  margin: 25px auto;
+  position: fixed;
+  top: 15%;
+  left: 20%;
+  background-color: #fff;
+}
+
+#modalLeft {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#modalRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 64px;
+  padding-right: 60px;
+  margin-top: 30px;
+}
+
+#modalRight h2 {
+  font-size: 40px;
+  margin: 0px;
+}
+
+#modalRight h3 {
+  font-weight: 500;
+  font-size: 30px;
+  color: #998e78;
+  margin: 15px 0;
+}
+
+#modalRight p {
+  margin-bottom: 80px;
+  font-size: 18px;
+}
+
+#btns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.buyBtn:hover {
+  background-color: #fff;
+  color: #6e9c9f;
+  border: 2px solid #6e9c9f;
+  transition: 0.3s;
+}
+
+.buyBtn {
+  padding: 22px 50px;
+  background: #6e9c9f;
+  width: 180px;
+  height: 65px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+#closeBtn {
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: transparent;
+  width: 30px;
+  margin-left: 470px;
+  color: #4e3a14;
+}
+
+/*!  */
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(117, 117, 117, 0.104); /* Цвет и прозрачность overlay */
+  opacity: 0; /* Изначально делаем overlay непрозрачным (невидимым) */
+  transition: opacity 0.3s ease; /* Добавляем анимацию на изменение прозрачности */
+}
+
+.image-container:hover .overlay {
+  opacity: 1; /* При наведении на картинку делаем overlay полностью прозрачным (видимым) */
+}
