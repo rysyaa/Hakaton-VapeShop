@@ -29,6 +29,32 @@
       </div>
     </header>
     <h3 class="product-card-h3">POD-СИСТЕМЫ</h3>
+    <section class="container add-block">
+      <form>
+        <div class="allInputs">
+          <input placeholder="Название" type="text" id="inpName" class="inputs" />
+          <input
+            placeholder="Изображение"
+            type="url"
+            id="inpImg"
+            class="inputs"
+          />
+          <input
+            placeholder="Описание"
+            type="text"
+            id="inpDesc"
+            class="inputs"
+          />
+          <input
+            placeholder="Цена"
+            type="number"
+            id="inpPrice"
+            class="inputs"
+          />
+          <button id="btnCreate"><img src="../images/create-btn.png" alt=""></button>
+        </div>
+      </form>
+    </section>
     <br />
     <div id="product-card-container" class="product-card-container">
       <!-- <div class="product-card">
@@ -78,7 +104,8 @@
             Производитель: Smoant <br />
             Тип испарителя: Smoant Santi S Coils (S1 DL 0.4 Ом / S2 RDL 0.6 Ом /
             S3 MTL 1.2 Ом) <br />
-            Тип затяжки: Смешанная
+            Тип затяжки: Смешанная <br>
+            <button class="product-card__button">Купить</button>
           </p>
         </div>
       </div>
@@ -108,6 +135,41 @@
             </div>
         </div>
     </footer>
+    <!-- !  Start Edit modal -->
+    <div id="modal" class="editModal">
+      <button id="closeEditModal">X</button>
+      <!-- <div id="modal-r"> -->
+      <form id="editForm" class="formEdit">
+        <h1>Edit</h1>
+        <input
+          type="text"
+          placeholder="Имя"
+          class="editInps"
+          id="editInpName"
+        />
+        <input
+          type="url"
+          placeholder="Изображение"
+          class="editInps"
+          id="editInpImage"
+        />
+        <input
+          type="text"
+          placeholder="Описание"
+          class="editInps"
+          id="editInpDesc"
+        />
+        <input
+          type="number"
+          placeholder="Цена"
+          class="editInps"
+          id="editInpPrice"
+        />
+        <button type="submit">save changes</button>
+      </form>
+      <!-- </div> -->
+    </div>
+    <!-- !  Finish Edit modal -->
 
     <script src="../js/main.js"></script>
   </body>

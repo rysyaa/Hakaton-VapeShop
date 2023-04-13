@@ -142,6 +142,21 @@ header img {
   background-color: #3d3d3d;
 }
 
+.product-card__button2 {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card__button2:hover {
+  background-color: #3d3d3d;
+}
+
 /*!  */
 .gradient-border {
   border: 5px solid transparent; 
@@ -313,4 +328,76 @@ footer {
   border-image: linear-gradient(to bottom, #000000, #290031); 
   border-image-slice: 1; 
   background-color: #29003530;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.allInputs {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.inputs {
+  width: 165px;
+  height: 35px;
+  background-color: white;
+  /* cursor: pointer; */
+  border: 2px solid rgb(0, 70, 0);
+  transition: 0.3s;
+  text-align: center;
+  border-radius: 5px;
+  border: 3px solid transparent; 
+  border-image: linear-gradient(to bottom, #000000, #290031); 
+  border-image-slice: 1; 
+  background-color: #29003530;
+}
+
+.inputs:hover {
+  transition: 0.1s;
+  border-radius: 5px;
+  font-size: 1em;
+}
+#btnCreate{
+  width: 3%;
+  height: 3em;
+  background-color: #998e7800;
+  color: white;
+  border: 3px solid transparent; 
+  border-image: linear-gradient(to bottom, #000000, #290031); 
+  border-image-slice: 1; 
+  background-color: #29003530;
+}
+
+.btnEdit {
+  width: 40%;
+  height: 5%;
+  border: 2px solid black;
+}
+.formEdit {
+  /* display: flex; */
+  margin: auto;
+  /* width: 100%; */
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+#closeEditModal {
+  height: 5%;
+  width: 5%;
+}
+.editModal {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 40%;
+}
+.editInps {
+  width: 300px;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
