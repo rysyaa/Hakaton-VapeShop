@@ -291,3 +291,16 @@ footer {
 #header-btn-back img:hover {
   transform: scale(1.1);
 }
+.pagination__btns {
+  text-align: center;
+}
+.btn {
+  padding: 0.05em 0.4em;
+  font-size: 2em;
+  background-color: #998e7800;
+  color: white;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom, #063b00, #8a0000);
+  border-image-slice: 1;
+  background-color: #ff590030;
+}
