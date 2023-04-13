@@ -12,7 +12,7 @@ body {
   background-size: cover;
   position: relative;
 }
-button{
+button {
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   transition: 0.4s;
@@ -299,30 +299,16 @@ footer {
 #header-btn-back img:hover {
   transform: scale(1.1);
 }
-<<<<<<< HEAD
 .pagination__btns {
   text-align: center;
 }
 .btn {
-=======
-.pagination__btns{
-  text-align: center;
-}
-.btn{
->>>>>>> 8bc87d31b5fdea72c8374105cacf581db5f81ad7
   padding: 0.05em 0.4em;
   font-size: 2em;
   background-color: #998e7800;
   color: white;
-<<<<<<< HEAD
-  border: 3px solid transparent;
-  border-image: linear-gradient(to bottom, #063b00, #8a0000);
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, #002e0b, #650000);
   border-image-slice: 1;
-  background-color: #ff590030;
-=======
-  border: 5px solid transparent; 
-  border-image: linear-gradient(to right, #002e0b, #650000); 
-  border-image-slice: 1; 
   background-color: #71000030;
->>>>>>> 8bc87d31b5fdea72c8374105cacf581db5f81ad7
 }

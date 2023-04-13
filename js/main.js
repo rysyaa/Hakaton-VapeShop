@@ -66,3 +66,6 @@ async function countPages() {
   closeBtnDetailsModal.addEventListener("click", () => {
     modal.style.display = "none"
   })
+
+
+  
