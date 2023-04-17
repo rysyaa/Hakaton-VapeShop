@@ -369,7 +369,7 @@ form {
   width: 165px;
   height: 35px;
   background-color: white;
-  /* cursor: pointer; */
+  outline: 0;
   border: 2px solid rgb(0, 70, 0);
   transition: 0.3s;
   text-align: center;
@@ -378,6 +378,7 @@ form {
   border-image: linear-gradient(to bottom, #000000, #290031);
   border-image-slice: 1;
   background-color: #29003530;
+  color: white;
 }
 
 .inputs:hover {
@@ -471,17 +472,26 @@ form {
   margin: 0 auto;
 }
 .searchInput input{
-  border: none;
   width: 200px;
   height: 2.6em;
   border-radius: 0.2em;
   padding-left: 1em;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom, #000000, #290031);
+  border-image-slice: 1;
+  background-color: #29003530;
+  color: white;
+  outline: 0;
 }
 .searchInput button{
   width: 60px;
   height: 2.6em;
   border-radius: 0.2em;
-  border: none;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom, #000000, #290031);
+  border-image-slice: 1;
+  background-color: #29003530;
+  color: white;
 }
 .filter_btn {
   width: 180px;
