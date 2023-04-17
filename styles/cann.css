@@ -50,6 +50,11 @@ header img {
   height: 34px;
   transition: 0.2s;
 }
+.header__icons{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .header__contact:hover {
   transform: scale(1.1);
 }
@@ -72,15 +77,16 @@ header img {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  width: 1200px; /* Максимальная ширина контейнера, чтобы карточки не разъезжались на широких экранах */
+  width: 90%; /* Максимальная ширина контейнера, чтобы карточки не разъезжались на широких экранах */
   margin: 0 auto; /* Центрирование контейнера на странице */
   margin-bottom: 20px;
   margin-top: 15px;
 }
 
 .product-card {
-  max-width: 26%;
-  flex-basis: calc(33.33% - 20px);
+  /* max-width: 26%; */
+  width: 310px;
+  /* flex-basis: calc(33.33% - 20px); */
   margin: 10px;
   background-color: #ffffff;
   border-radius: 5px;
@@ -239,7 +245,7 @@ header img {
 /*!  */
 
 footer {
-  height: 34vh;
+  min-height: 34vh;
   background-color: rgba(0, 0, 0, 0.803);
   /* background-image: url(../images/bg-footer.jpg); */
   background-repeat: no-repeat;
@@ -250,15 +256,17 @@ footer {
   height: 100%;
   width: 90%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 .footer__icon {
   margin-right: 18%;
   text-align: center;
+  width: 160px;
 }
 .footer__icon img {
-  width: 27%;
+  width: 100%;
 }
 .footer__icon h3 {
   color: rgb(143, 0, 0);
@@ -272,6 +280,7 @@ footer {
 }
 .footer__contact {
   padding: 6px 0;
+  width: 100px;
 }
 .footer__contact img {
   height: 1rem;
